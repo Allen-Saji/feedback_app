@@ -18,4 +18,4 @@ FeedbackStats.propTypes = {
     feedback : PropTypes.array.isRequired,
 }
 
-export default FeedbackStats
+export default FeedbackStats;
