@@ -8,6 +8,7 @@ import FeedbackStats from "./components/FeedbackStats";
 import FeedbackForm from "./components/FeedbackForm";
 import AboutPage from './pages/AboutPage';
 import AboutIconLink from './components/AboutIconLink';
+import {FeedbackProvider} from './context/FeedbackContext';
 
 function App() {
     const [feedback, setFeedback] =  useState(FeedbackData);
@@ -23,6 +24,7 @@ function App() {
     }
 
     return (
+        <FeedbackProvider>
     <Router>
     <Header />
         <div className="container">
@@ -40,7 +42,9 @@ function App() {
         </Routes>
         <AboutIconLink />
         </div>
-    </Router>);
+    </Router>
+    </FeedbackProvider>
+    )
 }
 
 export default App;
