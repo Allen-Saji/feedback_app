@@ -7,6 +7,7 @@ import AboutPage from './pages/AboutPage';
 import AboutIconLink from './components/AboutIconLink';
 import {FeedbackProvider} from './context/FeedbackContext';
 
+
 function App() {
     return (
         <FeedbackProvider>
